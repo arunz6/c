@@ -1,0 +1,4 @@
+{
+    "files.autoSave": "onFocusChange",
+    "terminal.integrated.suggest.runOnEnter": "always"
+}
