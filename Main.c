@@ -16,12 +16,6 @@ int main()
     printf("b value is %d", b);
 }
 
-// dsa ke questions
-
-// number system pado
-// probablity
-// sdlc and projectt flow
-
 // // this code is for swap a to b with temp var
 
 // #include <stdio.h>
