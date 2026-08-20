@@ -1,5 +1,34 @@
+// dsa questions lab assignment
 
-// // question no 2
+// //C program to input 10 elements into an array and display the elements and their total count
+// #include <stdio.h>
+
+// int main() {
+//     int arr[10];
+//     int i;
+
+//     // Input 10 elements
+//     printf("Enter 10 elements:\n");
+
+//     for (i = 0; i < 10; i++) {
+//         printf("Enter element %d: ", i + 1);
+//         scanf("%d", &arr[i]);
+//     }
+
+//     // Display elements
+//     printf("\nElements of the array are:\n");
+
+//     for (i = 0; i < 10; i++) {
+//         printf("%d ", arr[i]);
+//     }
+
+//     // Display number of elements
+//     printf("\n\nNumber of elements present in array = %d\n", 10);
+
+//     return 0;
+// }
+
+// //  c program to read n elemet and give sum and avrage
 // #include <stdio.h>
 
 // int main()
@@ -17,7 +46,7 @@
 //     return 0;
 // }
 
-// // question no 3
+// // c program to find largest and smallest element
 // #include <stdio.h>
 
 // int main() {
@@ -41,7 +70,7 @@
 //     return 0;
 // }
 
-// // qurstio no 4
+// // c program for inser element on specfic postions
 // #include <stdio.h>
 
 // int main() {
