@@ -105,3 +105,22 @@ int main()
 //     printf("now a is %d", a);
 //     printf("b value is %d", b);
 // }
+
+// swap var without temp var
+#include <stdio.h>
+
+int main()
+{
+
+    // swap a number with 3rd value
+    int a, b;
+    printf("give the value 1st value");
+    scanf("%d", &a);
+    printf("give the value 2st value");
+    scanf("%d", &b);
+    a = a + b;
+    b = a - b;
+    a = a - b;
+    printf("now a is %d\n", a);
+    printf("b value is %d", b);
+}
