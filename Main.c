@@ -85,3 +85,23 @@ int main()
 // number system pado
 // probablity
 // sdlc and projectt flow
+
+// // this code is for swap a to b with temp var
+
+// #include <stdio.h>
+
+// int main()
+// {
+
+//     // swap a number with 3rd value
+//     int a, b;
+//     printf("give the value 1st value");
+//     scanf("%d", &a);
+//     printf("give the value 2st value");
+//     scanf("%d", &b);
+//     int temp = a;
+//     a = b;
+//     b = temp;
+//     printf("now a is %d", a);
+//     printf("b value is %d", b);
+// }
