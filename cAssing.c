@@ -206,3 +206,57 @@
 
 //     return 0;
 // }
+
+// Write a program to check whether a number is divisible by both 3 and 5.
+// #include <stdio.h>
+// void main()
+// {
+//     int a;
+//     printf("Enter your number: ");
+//     scanf("%d", &a);
+
+//     if (a % 5 == 0 && a % 3 == 0)
+//     {
+//         printf("divisible by both both");
+//     }
+//     else
+//     {
+//         printf("Not divisible by both");
+//     }
+// }
+
+// Write a program to check whether a number is positive and even.
+// #include <stdio.h>
+// int main()
+// {
+
+//     int a;
+//     printf("Enter your number: ");
+//     scanf("%d", &a);
+//     if (a > 0 && a % 2 == 0)
+//     {
+//         printf("number is positive and even ");
+//     }
+//     else
+//     {
+//         printf("not positivee and even ");
+//     }
+//     return 0;
+// }
+
+// // Write a program to check whether a character is a vowel or consonant using logical operators.
+// #include <stdio.h>
+// int main()
+// {
+//     char c;
+
+//     printf("Enter a character: ");
+//     scanf("%c",&c);
+
+//     if(c=='a'||c=='e'||c=='i'||c=='o'||c=='u'||c=='A'||c=='E'||c=='I'||c=='O'||c=='U')
+//         printf("Vowel");
+//     else
+//         printf("Consonant");
+
+//     return 0;
+// }
