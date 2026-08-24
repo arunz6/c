@@ -167,3 +167,42 @@
 
 //     return 0;
 // }
+
+// Write a program to check whether a given year is a leap year.
+// ye question nai aya
+
+// 3. Logical Operators &amp;&amp; || !
+
+// Write a program to check whether a number lies between 10 and 50.
+// #include <stdio.h>
+// int main()
+// {
+//     int n;
+
+//     printf("Enter a number: ");
+//     scanf("%d",&n);
+
+//     if(n>=10 && n<=50)
+//         printf("Number lies between 10 and 50");
+//     else
+//         printf("Number is not in range");
+
+//     return 0;
+// }
+
+// // Write a program to check whether a person is eligible to vote based on age.
+// #include <stdio.h>
+// int main()
+// {
+//     int age;
+
+//     printf("Enter your age: ");
+//     scanf("%d", &age);
+
+//     if (age < 18 && age > 0)
+//         printf("  Not eligible to vote");
+//     else
+//         printf("Eligible to vote ");
+
+//     return 0;
+// }
