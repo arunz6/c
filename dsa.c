@@ -91,3 +91,29 @@
 //     }
 //     return 0;
 // }
+
+// // c program for print revers array
+// #include <stdio.h>
+
+// int main() {
+
+//     int arrlength;
+
+//     printf("Give how many values you want in array: ");
+//     scanf("%d", &arrlength);
+
+//     int arr[arrlength];
+
+//     for(int i = 0; i < arrlength; i++) {
+//         printf("Give the value %d: ", i + 1);
+//         scanf("%d", &arr[i]);
+//     }
+
+//     printf("Array in reverse: ");
+
+//     for(int i = arrlength - 1; i >= 0; i--) {
+//         printf("%d ", arr[i]);
+//     }
+
+//     return 0;
+// }
