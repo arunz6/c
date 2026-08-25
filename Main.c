@@ -1,20 +1,20 @@
-#include <stdio.h>
+// #include <stdio.h>
 
-int main()
-{
+// int main()
+// {
 
-    // swap a number with 3rd value
-    int a, b;
-    printf("give the value 1st value");
-    scanf("%d", &a);
-    printf("give the value 2st value");
-    scanf("%d", &b);
-    a = a + b;
-    b = a - b;
-    a = a - b;
-    printf("now a is %d", a);
-    printf("b value is %d", b);
-}
+//     // swap a number with 3rd value
+//     int a, b;
+//     printf("give the value 1st value");
+//     scanf("%d", &a);
+//     printf("give the value 2st value");
+//     scanf("%d", &b);
+//     a = a + b;
+//     b = a - b;
+//     a = a - b;
+//     printf("now a is %d", a);
+//     printf("b value is %d", b);
+// }
 
 // // this code is for swap a to b with temp var
 
@@ -79,3 +79,30 @@ int main()
 //       printf("c value is %d", c);
 
 // }
+
+#include <stdio.h>
+
+int main()
+{
+
+    float arr[10];
+    float temp;
+    int i;
+
+    for (i = 0; i < 10; i++)
+    {
+        printf("Enter element: ");
+        scanf("%f", &arr[i]);
+    }
+
+    for (i = 0; i < 10; i++)
+    {
+        if (arr[i] > temp)
+        {
+            temp = arr[i];
+        }
+    }
+    printf("\n%.0f is the largest number\n", temp);
+
+    return 0;
+}
