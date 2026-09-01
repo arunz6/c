@@ -86,6 +86,67 @@ int main()
     int arrelemetno;
     printf("Give how many values you want in array: ");
     scanf("%d", &arrelemetno);
+    float a[arrelemetno]; // array me kitne element chiye vo input karne ke liye
+
+    // array me kitte element chiye vo input karne ke liye loop
+    for (int i = 0; i < arrelemetno; i++)
+    {
+        printf("Give  value ");
+        scanf("%f", &a[i]);
+    }
+    int count[arrelemetno];               // same array banao jo count karega ki kitne element hai
+    for (int i = 0; i < arrelemetno; i++) // assign karo 0 har place pe
+    {
+        count[i] = 0;
+    }
+    for (int i = 0; i < arrelemetno; i++) // loop count karega har value kitte bar aa rahe h
+    {
+        for (int j = 0; j < arrelemetno; j++)
+        {
+            if (a[i] == a[j])
+                count[i]++;
+        }
+    }
+    int maxCount = 0; // giving max couut max count ke value find  karenge
+    for (int i = 0; i < arrelemetno; i++)
+    {
+        if (count[i] > maxCount)
+            maxCount = count[i];
+    }
+    if (maxCount == 1)
+
+        printf("Mode: ");
+    for (int i = 0; i < arrelemetno; i++)
+    {
+        if (count[i] == maxCount)
+        {
+            int alreadyPrinted = 0;
+            for (int k = 0; k < i; k++)
+            {
+                if (a[k] == a[i])
+                {
+                    alreadyPrinted = 1;
+                    break;
+                }
+            }
+            if (!alreadyPrinted)
+                printf("%.2f ", a[i]);
+        }
+    }
+    printf("\n");
+
+    return 0;
+}
+
+// code for mode for indivisual serise
+
+#include <stdio.h>
+
+int main()
+{
+    int arrelemetno;
+    printf("no of elemet in array want  ");
+    scanf("%d", &arrelemetno);
     float a[arrelemetno];
 
     for (int i = 0; i < arrelemetno; i++)
@@ -112,11 +173,7 @@ int main()
         if (count[i] > maxCount)
             maxCount = count[i];
     }
-    if (maxCount == 1)
-    {
-        printf("No mode (all values are unique)\n");
-        return 0;
-    }
+
     printf("Mode: ");
     for (int i = 0; i < arrelemetno; i++)
     {
