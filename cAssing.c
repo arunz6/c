@@ -418,3 +418,24 @@ int main()
 
     return 0;
 }
+
+// Write a program to demonstrate pre-decrement and post-decrement.
+
+#include <stdio.h>
+
+int main()
+{
+    int a = 10, b = 10;
+
+    // Pre-decrement
+    printf("Pre-decrement:\n");
+    printf("Value of --a = %d\n", --a);
+    printf("Value of a = %d\n\n", a);
+
+    // Post-decrement
+    printf("Post-decrement:\n");
+    printf("Value of b-- = %d\n", b--);
+    printf("Value of b = %d\n", b);
+
+    return 0;
+}
