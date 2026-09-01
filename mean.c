@@ -1,81 +1,82 @@
-// // question no 1     mean
-// #include <stdio.h>
+// // question no 1     mean for  indivisual  serise
+#include <stdio.h>
 
-// int main()
-// {
+int main()
+{
 
-//     int arrelemetno;
-//     float sum;
-//     printf("give how many value you want in array ");
-//     scanf("%d", &arrelemetno);
-//     float a[arrelemetno] = {};
-//     for (int i = 0; i < arrelemetno; i++)
-//     {
-//         printf("give the value");
-//         scanf("%f", &a[i]);
-//     }
-//     for (int i = 0; i < arrelemetno; i++)
-//     {
-//         sum += a[i];
-//     }
-//     printf("mean is %f", sum / arrelemetno);
+    int arrelemetno;
+    float sum;
+    printf("give how many value you want in array ");
+    scanf("%d", &arrelemetno);
+    float a[arrelemetno] = {};
+    for (int i = 0; i < arrelemetno; i++)
+    {
+        printf("give the value");
+        scanf("%f", &a[i]);
+    }
+    for (int i = 0; i < arrelemetno; i++)
+    {
+        sum += a[i];
+    }
+    printf("mean is %f", sum / arrelemetno);
 
-//     return 0;
-// }
+    return 0;
+}
 
-// // question no 2 median
+// // question no 2 median for indivisual  serise
 
-// #include <stdio.h>
+#include <stdio.h>
 
-// int main()
-// {
-//     int arrelemetno;
-//     float median;
-//     float temp;
+int main()
+{
+    int arrelemetno;
+    float median;
+    float temp;
 
-//     printf("Give how many values you want in array: ");
-//     scanf("%d", &arrelemetno);
+    printf("Give how many values you want in array: ");
+    scanf("%d", &arrelemetno);
 
-//     float a[arrelemetno];
+    float a[arrelemetno];
 
-//     // Input values
-//     for (int i = 0; i < arrelemetno; i++)
-//     {
-//         printf("Give the value: ");
-//         scanf("%f", &a[i]);
-//     }
+    // Input values
+    for (int i = 0; i < arrelemetno; i++)
+    {
+        printf("Give the value: ");
+        scanf("%f", &a[i]);
+    }
 
-//     // Sort array
-//     for (int i = 0; i < arrelemetno - 1; i++)
-//     {
-//         for (int j = i + 1; j < arrelemetno; j++)
-//         {
-//             if (a[i] > a[j])
-//             {
-//                 temp = a[i];
-//                 a[i] = a[j];
-//                 a[j] = temp;
-//             }
-//         }
-//     }
+    // Sort array
+    for (int i = 0; i < arrelemetno - 1; i++)
+    {
+        for (int j = i + 1; j < arrelemetno; j++)
+        {
+            if (a[i] > a[j])
+            {
+                temp = a[i];
+                a[i] = a[j];
+                a[j] = temp;
+            }
+        }
+    }
 
-//     // Calculate median
-//     if (arrelemetno % 2 != 0)
-//     {
-//         // Odd number of elements
-//         median = a[arrelemetno / 2];
-//     }
-//     else
-//     {
-//         // Even number of elements
-//         median = (a[arrelemetno / 2] +
-//                   a[(arrelemetno / 2) - 1]) / 2.0;
-//     }
+    // Calculate median
+    if (arrelemetno % 2 != 0)
+    {
+        // Odd number of elements
+        median = a[arrelemetno / 2];
+    }
+    else
+    {
+        // Even number of elements
+        median = (a[arrelemetno / 2] +
+                  a[(arrelemetno / 2) - 1]) /
+                 2.0;
+    }
 
-//     printf("Median is: %.2f\n", median);
+    printf("Median is: %.2f\n", median);
 
-//     return 0;
-// }
+    return 0;
+}
 
 // code for mode for indivisual serise
 
