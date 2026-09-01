@@ -76,3 +76,66 @@
 
 //     return 0;
 // }
+
+// code for mode for indivisual serise
+
+#include <stdio.h>
+
+int main()
+{
+    int arrelemetno;
+    printf("Give how many values you want in array: ");
+    scanf("%d", &arrelemetno);
+    float a[arrelemetno];
+
+    for (int i = 0; i < arrelemetno; i++)
+    {
+        printf("Give  value ");
+        scanf("%f", &a[i]);
+    }
+    int count[arrelemetno];
+    for (int i = 0; i < arrelemetno; i++)
+    {
+        count[i] = 0;
+    }
+    for (int i = 0; i < arrelemetno; i++)
+    {
+        for (int j = 0; j < arrelemetno; j++)
+        {
+            if (a[i] == a[j])
+                count[i]++;
+        }
+    }
+    int maxCount = 0;
+    for (int i = 0; i < arrelemetno; i++)
+    {
+        if (count[i] > maxCount)
+            maxCount = count[i];
+    }
+    if (maxCount == 1)
+    {
+        printf("No mode (all values are unique)\n");
+        return 0;
+    }
+    printf("Mode: ");
+    for (int i = 0; i < arrelemetno; i++)
+    {
+        if (count[i] == maxCount)
+        {
+            int alreadyPrinted = 0;
+            for (int k = 0; k < i; k++)
+            {
+                if (a[k] == a[i])
+                {
+                    alreadyPrinted = 1;
+                    break;
+                }
+            }
+            if (!alreadyPrinted)
+                printf("%.2f ", a[i]);
+        }
+    }
+    printf("\n");
+
+    return 0;
+}
