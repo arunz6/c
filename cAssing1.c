@@ -480,7 +480,7 @@ int main()
 }
 
 // Write a program to find the size of int, float, char, and double using sizeof.
-
+// koi be varible kitta sixe le raha h usko define karke batata h
 #include <stdio.h>
 
 int main()
@@ -507,3 +507,45 @@ int main()
 
 // Write a program to use the comma operator and find the final value of a variable.
 // qquestion he samjh   nai aya
+
+find the output
+
+    // question no 1
+
+    Online C compiler to run C program online
+#include <stdio.h>
+
+    int main()
+{
+    int a = 10;
+    a += 5;
+    a *= 2;
+    a -= 4;
+    printf("%d", a);
+    return 0;
+
+    //     26
+
+    // === Code Execution Successful ===
+}
+
+// bitwise nai ata h
+// question no 2
+
+// question  no  3
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main()
+{
+    int a = 5;
+    printf("%d\n", ++a);
+    printf("%d\n", a++);
+    printf("%d\n", a);
+
+    //     6
+    // 6
+    // 7
+
+    // === Code Execution Successful ===
+}
