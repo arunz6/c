@@ -145,7 +145,30 @@ int main()
 }
 
 // Write a program to check whether a given year is a leap year.
-// ye question nai aya
+
+// rules
+// It's divisible by 4, and not divisible by 100 — OR
+// It's divisible by 400
+#include <stdio.h>
+
+int main()
+{
+    int year;
+
+    printf("Enter a year: ");
+    scanf("%d", &year);
+
+    if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
+    {
+        printf("%d is a leap year.\n", year);
+    }
+    else
+    {
+        printf("%d is not a leap year.\n", year);
+    }
+
+    return 0;
+}
 
 // 3. Logical Operators &amp;&amp; || !
 
