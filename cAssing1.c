@@ -549,3 +549,17 @@ int main()
 
     // === Code Execution Successful ===
 }
+
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main()
+{
+    int a = 10;
+    int b = a++;
+    printf("%d %d", a, b);
+
+    //     11 10
+
+    // === Code Execution Successful ===
+}
