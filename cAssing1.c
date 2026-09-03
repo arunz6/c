@@ -462,3 +462,38 @@ int main()
 
     return 0;
 }
+
+// 8. Special Operators
+
+// Important special operators in C include sizeof, comma.
+
+#include <stdio.h>
+
+int main()
+{
+    int arr[] = {2, 2};
+    printf(" sixe  of arr is %d", sizeof(arr));
+}
+
+//  sixe  of arr is 8
+
+// === Code Execution Successful ===
+
+// Write a program to find the size of int, float, char, and double using sizeof.
+
+#include <stdio.h>
+
+int main()
+{
+    int a = 123;
+    float b = 432.4243;
+    char c = 'a';
+    double d = 234567.8765432;
+
+    printf("Size of int: %d bytes\n", sizeof(a));
+    printf("Size of float: %d bytes\n", sizeof(b));
+    printf("Size of char: %d bytes\n", sizeof(c));
+    printf("Size of double: %d bytes\n", sizeof(d));
+
+    return 0;
+}
