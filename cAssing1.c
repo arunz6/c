@@ -473,11 +473,11 @@ int main()
 {
     int arr[] = {2, 2};
     printf(" sixe  of arr is %d", sizeof(arr));
+
+    //  sixe  of arr is 8
+
+    // === Code Execution Successful ===
 }
-
-//  sixe  of arr is 8
-
-// === Code Execution Successful ===
 
 // Write a program to find the size of int, float, char, and double using sizeof.
 
@@ -496,4 +496,14 @@ int main()
     printf("Size of double: %d bytes\n", sizeof(d));
 
     return 0;
+
+    //     Size of int: 4 bytes
+    // Size of float: 4 bytes
+    // Size of char: 1 bytes
+    // Size of double: 8 bytes
+
+    // === Code Execution Successful ===
 }
+
+// Write a program to use the comma operator and find the final value of a variable.
+// qquestion he samjh   nai aya
