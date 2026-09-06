@@ -508,14 +508,14 @@ int main()
 // Write a program to use the comma operator and find the final value of a variable.
 // qquestion he samjh   nai aya
 
-find the output
+// find the output
 
-    // question no 1
+// // question no 1
 
-    Online C compiler to run C program online
+// Online C compiler to run C program online
 #include <stdio.h>
 
-    int main()
+int main()
 {
     int a = 10;
     a += 5;
@@ -560,6 +560,25 @@ int main()
     printf("%d %d", a, b);
 
     //     11 10
+
+    // === Code Execution Successful ===
+}
+
+// Online C compiler to run C program online
+
+// question nno 4
+#include <stdio.h>
+
+int main()
+{
+    // Write C code here
+    int a = 10;
+    int b = ++a;
+    printf("%d %d", a, b);
+
+    return 0;
+
+    //     11 11
 
     // === Code Execution Successful ===
 }
