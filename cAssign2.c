@@ -115,3 +115,86 @@ int main()
     }
     return 0;
 }
+
+// Q2. Pass or Fail - Write a program to input marks and print: Pass if marks are 40 or above, Fail otherwise.
+
+#include <stdio.h>
+
+int main()
+{
+    int marks;
+    printf("Enter marks: ");
+    scanf("%d", &marks);
+    if (marks >= 40)
+    {
+        printf("Pass");
+    }
+    else
+    {
+        printf("Fail");
+    }
+    return 0;
+}
+
+// Q3. Profit or Loss - Input cost price and selling price. Print whether there is a profit or loss.
+#include <stdio.h>
+
+int main()
+{
+    int cost_price, selling_price;
+    printf("Enter cost price: ");
+    scanf("%d", &cost_price);
+    printf("Enter selling price: ");
+    scanf("%d", &selling_price);
+    if (selling_price > cost_price)
+    {
+        printf("Profit");
+    }
+    else if (selling_price < cost_price)
+    {
+        printf("Loss");
+    }
+    else
+    {
+        printf("No Profit No Loss");
+    }
+    return 0;
+}
+
+// Q4. Number is Zero or Not - Write a program to check whether a number is zero or non-zero.
+#include <stdio.h>
+
+int main()
+{
+    int num;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    if (num == 0)
+    {
+        printf("Zero");
+    }
+    else
+    {
+        printf("Non-Zero");
+    }
+    return 0;
+}
+
+// Q5. Divisible by 3 - Write a program to check whether a number is divisible by 3 or not.
+#include <stdio.h>
+
+int main()
+{
+    int num;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    if (num % 3 == 0)
+    {
+        printf("Divisible by 3");
+    }
+    else
+    {
+        printf("Not divisible by 3");
+    }
+    return 0;
+}
