@@ -15,10 +15,7 @@ int main()
     {
         printf("Positive");
     }
-    else
-    {
-        printf("Not Positive");
-    }
+
     return 0;
 }
 
@@ -37,10 +34,7 @@ int main()
     {
         printf("Even");
     }
-    else
-    {
-        printf("Not Even");
-    }
+
     return 0;
 }
 
@@ -59,10 +53,7 @@ int main()
     {
         printf("Divisible by 5");
     }
-    else
-    {
-        printf("Not Divisible by 5");
-    }
+
     return 0;
 }
 
@@ -79,10 +70,7 @@ int main()
     {
         printf("Positive and Even");
     }
-    else
-    {
-        printf("Not Positive and Even");
-    }
+
     return 0;
 }
 
@@ -101,9 +89,29 @@ int main()
     {
         printf("High Salary");
     }
+
+    return 0;
+}
+
+// Questions on if-else
+
+// Q1. Positive or Negative- Write a program to input a number and check
+// whether it is positive or negative.
+
+#include <stdio.h>
+
+int main()
+{
+    int num;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    if (num > 0)
+    {
+        printf("Positive");
+    }
     else
     {
-        printf("Not High Salary");
+        printf("Negative");
     }
     return 0;
 }
