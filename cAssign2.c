@@ -85,3 +85,25 @@ int main()
     }
     return 0;
 }
+
+// Q5. Salary Check-Write a program to input salary and print "High Salary" if
+// salary is greater than ₹50,000.
+
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main()
+{
+    int salary;
+    printf("Enter salary: ");
+    scanf("%d", &salary);
+    if (salary > 50000)
+    {
+        printf("High Salary");
+    }
+    else
+    {
+        printf("Not High Salary");
+    }
+    return 0;
+}
