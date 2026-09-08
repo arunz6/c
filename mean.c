@@ -340,3 +340,5 @@ int main()
 
     return 0;
 }
+
+//  continious ke leye start karna h
