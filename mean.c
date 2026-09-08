@@ -342,3 +342,49 @@ int main()
 }
 
 //  continious ke leye start karna h
+
+// continious mean
+
+#include <stdio.h>
+
+int main()
+{
+    int n;
+    float lower[10], upper[10], f[10], mid[10], fx[10];
+    float sumF = 0, sumFX = 0;
+
+    printf("how many class intervals ");
+    scanf("%d", &n);
+
+    for (int i = 0; i < n; i++)
+    {
+        printf("\nClass interval %d\n", i + 1);
+        printf("give lower limit: ");
+        scanf("%f", &lower[i]);
+        printf("enter upper limit: ");
+        scanf("%f", &upper[i]);
+        printf("enter  frequency: ");
+        scanf("%f", &f[i]);
+
+        mid[i] = (lower[i] + upper[i]) / 2; // midpoint of class
+        fx[i] = mid[i] * f[i];
+
+        sumF = sumF + f[i];
+        sumFX = sumFX + fx[i];
+    }
+
+    // Print table
+    printf("\nClass  f  x (mid) f*x\n");
+    for (int i = 0; i < n; i++)
+    {
+        printf("%.0f-%.0f\t\t%.0f\t%.1f\t%.1f\n", lower[i], upper[i], f[i], mid[i], fx[i]);
+    }
+
+    float mean = sumFX / sumF;
+
+    printf("\nTotal f  (N)  = %.0f\n", sumF);
+    printf("Total f*x     = %.1f\n", sumFX);
+    printf("Mean =%2f\n", mean);
+
+    return 0;
+}
