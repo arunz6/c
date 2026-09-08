@@ -207,7 +207,7 @@ int main()
     int x[10], f[10];
     int n, sumF = 0, sumFX = 0;
 
-    printf("How many values? ");
+    printf("How many values ");
     scanf("%d", &n);
 
     for (int i = 0; i < n; i++)
@@ -218,11 +218,11 @@ int main()
         scanf("%d", &f[i]);
     }
 
-    printf("\nx\tf\tf*x\n");
+    printf("  x   f   f*x\n");
     for (int i = 0; i < n; i++)
     {
         int fx = x[i] * f[i];
-        printf("%d\t%d\t%d\n", x[i], f[i], fx);
+        printf("%d  %d  %d   ", x[i], f[i], fx);
         sumF = sumF + f[i];
         sumFX = sumFX + fx;
     }
@@ -237,21 +237,23 @@ int main()
 // discreate median question
 
 #include <stdio.h>
-// discreate  median
+
 int main()
 {
-    int x[10], n;
+    int x[10], f[10], cf[10];
+    int n, sumF = 0;
 
-    printf("How many values? ");
+    printf("How many  values");
     scanf("%d", &n);
 
-    printf("Enter %d values:\n", n);
     for (int i = 0; i < n; i++)
     {
+        printf("Enter value %d: ", i + 1);
         scanf("%d", &x[i]);
+        printf("Enter frequency %d: ", i + 1);
+        scanf("%d", &f[i]);
     }
 
-    // Sort the values (small to large) using simple bubble sort
     for (int i = 0; i < n - 1; i++)
     {
         for (int j = 0; j < n - i - 1; j++)
@@ -261,30 +263,80 @@ int main()
                 int temp = x[j];
                 x[j] = x[j + 1];
                 x[j + 1] = temp;
+                temp = f[j];
+                f[j] = f[j + 1];
+                f[j + 1] = temp;
             }
         }
     }
-
-    printf("\nSorted values: ");
     for (int i = 0; i < n; i++)
     {
-        printf("%d ", x[i]);
+        sumF = sumF + f[i];
+        cf[i] = sumF;
     }
-
-    float median;
-
-    if (n % 2 == 0)
+    printf("x  f  cf\n");
+    for (int i = 0; i < n; i++)
     {
-        // even number of values -> average of middle two
-        median = (x[n / 2 - 1] + x[n / 2]) / 2.0;
+        printf("%d    %d   %d\n", x[i], f[i], cf[i]);
     }
-    else
+    printf("\nTotal frequency (N) = %d\n", sumF);
+    float medianPos = (sumF + 1) / 2.0;
+    int median = 0;
+
+    for (int i = 0; i < n; i++)
     {
-        // odd number of values -> middle one
-        median = x[n / 2];
+        if (cf[i] >= medianPos)
+        {
+            median = x[i];
+            break;
+        }
+    }
+    printf("Median position = (N+1)/2 = %.1f\n", medianPos);
+    printf("Median = %d\n", median);
+
+    return 0;
+}
+
+// discrete mode
+
+#include <stdio.h>
+
+int main()
+{
+    int x[10], f[10];
+    int n;
+
+    printf("give  distinct values ");
+    scanf("%d", &n);
+
+    for (int i = 0; i < n; i++)
+    {
+        printf("Enter value %d: ", i + 1);
+        scanf("%d", &x[i]);
+        printf("Enter frequency %d: ", i + 1);
+        scanf("%d", &f[i]);
     }
 
-    printf("\nMedian = %.2f\n", median);
+    printf("\nx\tf\n");
+    for (int i = 0; i < n; i++)
+    {
+        printf("%d\t%d\n", x[i], f[i]);
+    }
+
+    int maxF = f[0];
+    int mode = x[0];
+
+    for (int i = 1; i < n; i++)
+    {
+        if (f[i] > maxF)
+        {
+            maxF = f[i];
+            mode = x[i];
+        }
+    }
+
+    printf("\nHighest frequency = %d\n", maxF);
+    printf("Mode = %d\n", mode);
 
     return 0;
 }
