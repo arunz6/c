@@ -233,3 +233,58 @@ int main()
 
     return 0;
 }
+
+// discreate median question
+
+#include <stdio.h>
+// discreate  median
+int main()
+{
+    int x[10], n;
+
+    printf("How many values? ");
+    scanf("%d", &n);
+
+    printf("Enter %d values:\n", n);
+    for (int i = 0; i < n; i++)
+    {
+        scanf("%d", &x[i]);
+    }
+
+    // Sort the values (small to large) using simple bubble sort
+    for (int i = 0; i < n - 1; i++)
+    {
+        for (int j = 0; j < n - i - 1; j++)
+        {
+            if (x[j] > x[j + 1])
+            {
+                int temp = x[j];
+                x[j] = x[j + 1];
+                x[j + 1] = temp;
+            }
+        }
+    }
+
+    printf("\nSorted values: ");
+    for (int i = 0; i < n; i++)
+    {
+        printf("%d ", x[i]);
+    }
+
+    float median;
+
+    if (n % 2 == 0)
+    {
+        // even number of values -> average of middle two
+        median = (x[n / 2 - 1] + x[n / 2]) / 2.0;
+    }
+    else
+    {
+        // odd number of values -> middle one
+        median = x[n / 2];
+    }
+
+    printf("\nMedian = %.2f\n", median);
+
+    return 0;
+}
