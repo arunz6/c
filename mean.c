@@ -197,3 +197,39 @@ int main()
 
     return 0;
 }
+
+// discreate mean question
+
+#include <stdio.h>
+// mean discrreat
+int main()
+{
+    int x[10], f[10];
+    int n, sumF = 0, sumFX = 0;
+
+    printf("How many values? ");
+    scanf("%d", &n);
+
+    for (int i = 0; i < n; i++)
+    {
+        printf("Enter value %d: ", i + 1);
+        scanf("%d", &x[i]);
+        printf("Enter frequency %d: ", i + 1);
+        scanf("%d", &f[i]);
+    }
+
+    printf("\nx\tf\tf*x\n");
+    for (int i = 0; i < n; i++)
+    {
+        int fx = x[i] * f[i];
+        printf("%d\t%d\t%d\n", x[i], f[i], fx);
+        sumF = sumF + f[i];
+        sumFX = sumFX + fx;
+    }
+
+    float mean = (float)sumFX / sumF;
+
+    printf("\nMean = %.2f\n", mean);
+
+    return 0;
+}
