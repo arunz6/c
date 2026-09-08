@@ -198,3 +198,143 @@ int main()
     }
     return 0;
 }
+
+// Questions on else-if Ladder
+
+// Q1. Grade Calculation- Input marks and display:
+// 90–100 → A
+// 80–89 → B
+// 70–79 → C
+// 60–69 → D
+// Below 60 → F
+
+#include <stdio.h>
+
+int main()
+{
+    int marks;
+    printf("Enter marks: ");
+    scanf("%d", &marks);
+    if (marks >= 90)
+    {
+        printf("A");
+    }
+    else if (marks >= 80)
+    {
+        printf("B");
+    }
+    else if (marks >= 70)
+    {
+        printf("C");
+    }
+    else if (marks >= 60)
+    {
+        printf("D");
+    }
+    else
+    {
+        printf("F");
+    }
+    return 0;
+}
+
+// Q2. Number Range- Write a program to check whether a number is:
+// 1–10 → Small
+// 11–50 → Medium
+// 51–100 → Large
+// Above 100 → Very Large
+
+#include <stdio.h>
+
+int main()
+{
+    int num;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    if (num >= 1 && num <= 10)
+    {
+        printf("Small");
+    }
+    else if (num >= 11 && num <= 50)
+    {
+        printf("Medium");
+    }
+    else if (num >= 51 && num <= 100)
+    {
+        printf("Large");
+    }
+    else
+    {
+        printf("Very Large");
+    }
+    return 0;
+}
+
+// Q3. Temperature- Input temperature and display:
+// Above 40 → Very Hot
+// 30–40 → Hot
+// 20–29 → Normal
+// 10–19 → Cold
+// Below 10 → Very Cold
+
+#include <stdio.h>
+
+int main()
+{
+    int temperature;
+    printf("Enter temperature: ");
+    scanf("%d", &temperature);
+    if (temperature > 40)
+    {
+        printf("Very Hot");
+    }
+    else if (temperature >= 30)
+    {
+        printf("Hot");
+    }
+    else if (temperature >= 20)
+    {
+        printf("Normal");
+    }
+    else if (temperature >= 10)
+    {
+        printf("Cold");
+    }
+    else
+    {
+        printf("Very Cold");
+    }
+    return 0;
+}
+
+// Q4. Age Category- Input age and display:
+// 0–12 → Child
+// 13–19 → Teenager
+// 20–59 → Adult
+// 60+ → Senior Citizen
+
+#include <stdio.h>
+
+int main()
+{
+    int age;
+    printf("Enter age: ");
+    scanf("%d", &age);
+    if (age >= 0 && age <= 12)
+    {
+        printf("Child");
+    }
+    else if (age >= 13 && age <= 19)
+    {
+        printf("Teenager");
+    }
+    else if (age >= 20 && age <= 59)
+    {
+        printf("Adult");
+    }
+    else
+    {
+        printf("Senior Citizen");
+    }
+    return 0;
+}
